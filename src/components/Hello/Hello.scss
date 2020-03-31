@@ -1,0 +1,50 @@
+@import '../../globals';
+@import '../../theme';
+
+.testimonial {
+    @include primary-box-border;
+    @include border-padding;
+    @include center-horizontal;
+    width: 50%;
+    max-width: 670px;
+    margin-bottom: 50px;
+}
+  
+/* Clear floats after testimonials */
+.testimonial::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.wave {
+  transform: rotate(20deg) translate( 0px,-7px);
+}
+
+.download-button {
+  margin-top: 500px;
+}
+
+.profile {
+    width: 40%;
+}
+
+/* Float images inside the testimonial to the left. Add a right margin, and style the image as a circle */
+.testimonial img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the testimonial */
+@media (max-width: 700px) {
+  .testimonial {
+    text-align: center;
+    width: 100%;
+  }
+
+  .testimonial img {
+    @include center-horizontal;
+    float: none;
+  }
+}

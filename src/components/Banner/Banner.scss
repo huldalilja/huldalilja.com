@@ -1,0 +1,34 @@
+@import '../../globals';
+@import '../../theme';
+
+.bg {
+  height: 100vh;
+  background-color: $primary-color-background;
+}
+
+.light-primary-wave {
+  fill: $primary-color-background;
+}
+
+.circle {
+  @include border-style;
+  @include border-padding;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: $primary-color-background-lighter;
+  border-color: $primary-color;
+}
+
+.logo {
+  display:block;
+  margin:auto;
+  width: 40%;
+  margin-top: 1rem;
+}
+
+.circle div{
+  margin: 1rem;
+}

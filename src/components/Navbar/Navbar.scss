@@ -1,0 +1,48 @@
+@import '../../theme';
+@import '../../globals';
+
+#navbar {
+    background-color: $primary-color-dark;
+    color: white;
+    opacity: 0.8;
+    position: fixed;
+    top: -57px;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    z-index: 2;
+}
+
+ul {
+    margin: 0px;
+}
+
+#navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+}
+
+#navbar a:hover {
+    background-color: $primary-color;
+    font-weight: bold;
+    transition: background-color .5s ease-in-out, font-weight 0.5s ease-in-out;
+}
+
+.active-link {
+    background-color: $primary-color;
+    font-weight: bold;
+    transition: background-color .5s ease-in-out, font-weight 0.5s ease-in-out;
+}
+
+.invisible-navbar {
+    top: -57px;
+}
+
+.visible-navbar {
+    top: 0px !important;
+}

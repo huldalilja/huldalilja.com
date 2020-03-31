@@ -1,0 +1,23 @@
+@import '../../globals';
+@import '../../theme';
+
+.button {
+    @include border-style;
+    @include center-horizontal;
+    width: 235px;
+    height: 50px;
+    color: white;
+    font-size: 1.3rem;
+    background-color: $primary-color-accent;
+    border-width: 0px;
+    border-color: $primary-color-background;
+    transition: border-width 0.5s;
+}
+
+.button:hover {
+    border-width: 5px;
+}
+
+button:active {
+    transform: scale(1.05);
+}

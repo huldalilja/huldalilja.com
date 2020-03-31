@@ -1,0 +1,59 @@
+.title {
+  font-size: 2.3rem;
+  font-family: Pacifico, cursive;
+  text-align: center;
+  color: #3f729b; }
+
+p {
+  font-size: 1.2rem; }
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -67px;
+  visibility: hidden; }
+
+.testimonial {
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: dashed;
+  border-radius: 10px;
+  border-color: #FBAC16;
+  background-color: #fff0c2;
+  padding: 35px;
+  display: block;
+  margin: auto;
+  width: 50%;
+  max-width: 670px;
+  margin-bottom: 50px; }
+
+/* Clear floats after testimonials */
+.testimonial::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.wave {
+  transform: rotate(20deg) translate(0px, -7px); }
+
+.download-button {
+  margin-top: 500px; }
+
+.profile {
+  width: 40%; }
+
+/* Float images inside the testimonial to the left. Add a right margin, and style the image as a circle */
+.testimonial img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%; }
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the testimonial */
+@media (max-width: 700px) {
+  .testimonial {
+    text-align: center;
+    width: 100%; }
+  .testimonial img {
+    display: block;
+    margin: auto;
+    float: none; } }

@@ -1,0 +1,72 @@
+@import '../../globals';
+@import '../../theme';
+
+.secondary-light-wave {
+  fill: $secondary-color-lighter;
+}
+
+.svg-wave {
+  vertical-align:bottom;
+}
+
+.secondary-light-bg {
+    background-color: $secondary-color-lighter;
+    margin: 0px;
+}
+
+.company-logo {
+}
+
+.experiences {
+  @include max-section-width;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.space-under {
+  margin-bottom: 40px;
+}
+  
+  /* Float four columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  min-width: 300px;
+  padding: 0 30px;
+  margin-bottom: 40px;
+}
+  
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  @include secondary-box;
+  text-align: center;
+  height: 360px;
+}
+
+.card-header {
+  @include secondary-box-border;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}

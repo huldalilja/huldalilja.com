@@ -1,0 +1,20 @@
+@import 'globals';
+@import 'theme';
+
+body, html {
+  height: 100%;
+  background-color: $secondary-color;
+  scroll-behavior: smooth;
+}
+
+.page {
+  margin: 0px 40px;
+}
+
+h2 {
+  color: $secondary-color;
+}
+
+h3 {
+  color: $secondary-color;
+}

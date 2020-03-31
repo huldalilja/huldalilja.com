@@ -1,0 +1,71 @@
+@import 'globals';
+
+@mixin box-radius {
+    border-radius: 10px;
+}
+
+@mixin border-style {
+    @include box-radius;
+    border-width: 5px;
+    border-style: dashed;
+}
+
+@mixin primary-box-border  {
+    @include border-style;
+    @include box-radius;
+    border-color: $primary-color-accent;
+    background-color: $primary-color-background-lighter;
+}
+
+@mixin secondary-box  {
+    @include box-radius;
+    background-color: $secondary-color-background;
+}
+
+@mixin secondary-box-border  {
+    border-width: 0px;
+    border-bottom-width: 5px;
+    border-style: dashed;
+    background-color: $secondary-color-background-lighter;
+    border-color: $secondary-color;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding-top: 15px;
+}
+
+@mixin border-padding {
+    padding: 35px;
+}
+
+@mixin center-horizontal{
+    display: block;
+    margin: auto;
+}
+
+@mixin space_after_content {
+    height: 150px;
+}
+
+@mixin max-section-width {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2.3rem;
+    font-family: Pacifico, cursive;
+    text-align: center;
+    color: $secondary-color;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -67px;
+    visibility: hidden;
+}
