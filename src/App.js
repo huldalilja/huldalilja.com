@@ -7,7 +7,7 @@ import Banner from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
 import Hello from "./components/Hello/Hello";
 import Education from "./components/Education/Education";
-import Experience from "./components/Excperience/Experience"
+import Experience from "./components/Experience/Experience"
 import Projects from "./components/Projects/Projects"
 import Footer from "./components/Footer/Footer"
 import More from "./components/More/More"
