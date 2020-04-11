@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component} from 'react';
 import "./Hello.scss";
 import profile from "../../assets/profile.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -26,8 +26,8 @@ class Hello extends Component {
 
     render() {
         return (
-            <Fragment>
-                <a className="anchor" id="Hello"></a>
+            <div className="page" id="HelloDiv">
+                <a href="./" className="anchor" id="Hello">a</a>
                 <div className="testimonial">
                     <div className="title">Hello <FontAwesomeIcon icon="hand-spock" className="wave"/></div>
                     <img className="profile" src={profile} alt="Avatar"/>
@@ -35,7 +35,7 @@ class Hello extends Component {
                         I also work as a research assistant at Reykjavík University.</p>
                 </div>
                 <Button onClick={this.download}  text="Download CV" icon="download" className="download-button"></Button>
-            </Fragment> 
+            </div> 
         );
     }
 }

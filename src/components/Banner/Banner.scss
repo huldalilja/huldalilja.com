@@ -13,10 +13,7 @@
 .circle {
   @include border-style;
   @include border-padding;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  @include center-vertical;
   border-radius: 50%;
   background-color: $primary-color-background-lighter;
   border-color: $primary-color;

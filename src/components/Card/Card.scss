@@ -1,0 +1,108 @@
+@import '../../globals';
+@import '../../theme';
+
+$card-height: 390px;
+$card-width: 390px;
+
+
+/* Style the counter cards */
+@mixin card {
+    @include secondary-box;
+    text-align: center;
+}
+
+.card-header {
+    @include secondary-box-border;
+    @include card-padding;
+    height: 50%;
+}
+
+.card-content{
+    height: 50%;
+    padding: 0 16px;
+}
+
+ /* Float four columns side by side */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: $card-width;
+    height: $card-height;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    float: left;
+    padding: 0 30px;
+    margin-bottom: 40px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+  /* Do an vertical flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateX(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+  /* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    @include card;
+}
+
+  /* Style the back side */
+.flip-card-back {
+    @include card;
+    @include card-padding;
+    transform: rotateX(180deg);
+    z-index: 2;
+}
+
+/* Folded corner, flip hint */
+.foldbr:before {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 0px;
+    height: 0px;
+    border-top: 35px solid $secondary-color-background;
+    border-right: 35px solid $secondary-color-lighter; /*Set to background color, not transparent!*/
+    -webkit-box-shadow: -5px -5px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: -5px -5px 5px rgba(0,0,0,0.3);
+    box-shadow: -5px -5px 5px rgba(0,0,0,0.3);
+    border-radius: 5px 0px 0px 0px; /* top left, top right, bottom right, bottom left */
+}
+
+  /* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .flip-card{
+        width: 100%;
+        display: block;
+        padding: 0px;
+    }
+}
+
+  /* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 800px) {
+    .flip-card{
+        height: $card-height*1.2;
+    }
+    
+    .card-header{
+        padding-top: 40px;
+    }
+}

@@ -30,7 +30,11 @@
     border-color: $secondary-color;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    padding-top: 15px;
+    padding-top: 20px;
+}
+
+@mixin card-padding {
+    padding: 20px 30px;
 }
 
 @mixin border-padding {
@@ -40,6 +44,13 @@
 @mixin center-horizontal{
     display: block;
     margin: auto;
+}
+
+@mixin center-vertical {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @mixin space_after_content {
@@ -69,3 +80,60 @@ a.anchor {
     top: -67px;
     visibility: hidden;
 }
+
+.company-logo {
+    display:block;
+    margin:auto;
+    max-width: 100px;
+    max-height: 70px;
+    transition: all .2s ease-in-out;
+    opacity: 0.8;
+}
+
+.company-logo:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color: $primary-color-accent;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.secondary-light-wave {
+    fill: $secondary-color-lighter;
+}
+
+.svg-wave {
+    vertical-align:bottom;
+    animation: moving-wave 5s linear infinite;
+}
+
+.svg-wave-top {
+    vertical-align:bottom;
+}
+
+@keyframes moving-wave {
+    0% {transform: scale(1, 1)}
+    10% {transform: scale(1, 1.05)}
+    20% {transform: scale(1, 1.15)}
+    30% {transform: scale(1, 1.2)}
+    40% {transform: scale(1, 1.23)}
+    50% {transform: scale(1, 1.23)}
+    60% {transform: scale(1, 1,2)}
+    70% {transform: scale(1, 1.1)}
+    80% {transform: scale(1, 1.05)}
+    90% {transform: scale(1, 1.02)}
+    100% {transform: scale(1, 1)}
+}
+
+.space-under {
+    margin-bottom: 40px;
+}
+
+::-moz-selection { background: $primary-color-accent; }
+::selection { background: $primary-color-accent; }

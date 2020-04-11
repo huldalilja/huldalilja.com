@@ -1,0 +1,14 @@
+@import '../../globals';
+@import '../../theme';
+
+.slideshow {
+    @include primary-box-border;
+    @include max-section-width;
+    @include border-padding;
+    @include center-horizontal;
+    width: 100%;
+}
+
+.slideshow-img {
+    width: 100%;
+}

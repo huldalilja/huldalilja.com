@@ -1,0 +1,19 @@
+@import '../../globals';
+@import '../../theme';
+
+.footer {
+    width: 100%;
+    background-color: $primary-color-background;
+    text-align: center;
+    height: 200px;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+.svg-wave {
+    vertical-align:bottom;
+}
+
+.primary-light-wave {
+    fill: $primary-color-background;
+}

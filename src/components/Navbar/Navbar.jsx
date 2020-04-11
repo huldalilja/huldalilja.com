@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./Navbar.scss"
 import Scrollspy from 'react-scrollspy'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Navbar extends Component {
 
@@ -24,6 +25,10 @@ scrollFunction() {
   }
 }
 
+showNavItems() {
+
+}
+
 render() {
   var classname = "";
   if (this.state.visible) {
@@ -35,11 +40,13 @@ render() {
   const classnames = classname;
   return (
     <div id="navbar" className={classnames}>
-      <Scrollspy items={ ['Hello', 'Experience', 'Education', 'Other'] } currentClassName="active-link">
-        <a href="#Hello">Hello</a>
-        <a href="#Experience">Experience</a>
-        <a href="#Education">Education</a>
-        <a href="#Other">Other</a>
+      <Scrollspy items={ ['HelloDiv', 'ExperienceDiv', 'EducationDiv', 'ProjectsDiv', 'MoreDiv'] } currentClassName="active-link">
+        <a className="nav-item" href="#Hello">Hello</a>
+        <a className="nav-item" href="#Experience">Experience</a>
+        <a className="nav-item" href="#Education">Education</a>
+        <a  className="nav-item" href="#Projects">Projects</a>
+        <a  className="nav-item" href="#More">More</a>
+        <a  onClick={this.showNavItems()} className="nav-item" className="hamburger"><FontAwesomeIcon icon="bars"/></a>
       </Scrollspy>
     </div>
 
