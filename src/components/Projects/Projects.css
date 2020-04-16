@@ -62,26 +62,31 @@ a:hover {
 ::selection {
   background: #FBAC16; }
 
-.button {
-  border-radius: 10px;
-  border-width: 5px;
-  border-style: dashed;
-  display: block;
-  margin: auto;
-  width: 235px;
-  height: 50px;
-  color: white;
-  font-size: 1.3rem;
-  background-color: #FBAC16;
-  border-width: 0px;
-  border-color: #ffecb3;
-  transition: border-width 0.5s;
+.secondary-light-bg {
+  background-color: #abc6db;
+  margin: 0px; }
+
+.projects {
   position: relative;
-  z-index: 1;
-  cursor: pointer; }
+  max-width: 1200px;
+  margin: 0 auto; }
 
-.button:hover {
-  border-width: 5px; }
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 -5px; }
 
-button:active {
-  transform: scale(1.05); }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.filled-boats {
+  animation: boat-on-wave 7s ease-in-out infinite;
+  user-select: none; }
+
+@keyframes boat-on-wave {
+  0%, 100% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(-20px); } }

@@ -53,10 +53,6 @@
     transform: translate(-50%, -50%);
 }
 
-@mixin space_after_content {
-    height: 150px;
-}
-
 @mixin max-section-width {
     position: relative;
     max-width: 1200px;
@@ -68,10 +64,6 @@
     font-family: Pacifico, cursive;
     text-align: center;
     color: $secondary-color;
-}
-
-p {
-    font-size: 1.2rem;
 }
 
 a.anchor {
@@ -102,33 +94,34 @@ a {
 
 a:hover {
     font-weight: bold;
+    cursor: pointer;
 }
 
 .secondary-light-wave {
     fill: $secondary-color-lighter;
 }
 
-.svg-wave {
-    vertical-align:bottom;
-    animation: moving-wave 5s linear infinite;
+@mixin svg-wave {
+    animation: moving-wave 7s ease-in-out infinite;
+    position:relative;
+    z-index: 0;
 }
 
 .svg-wave-top {
+    @include svg-wave;
     vertical-align:bottom;
+    transform-origin: bottom;
 }
 
 @keyframes moving-wave {
-    0% {transform: scale(1, 1)}
-    10% {transform: scale(1, 1.05)}
-    20% {transform: scale(1, 1.15)}
-    30% {transform: scale(1, 1.2)}
-    40% {transform: scale(1, 1.23)}
+    0%, 100% {transform: scale(1, 1)}
     50% {transform: scale(1, 1.23)}
-    60% {transform: scale(1, 1,2)}
-    70% {transform: scale(1, 1.1)}
-    80% {transform: scale(1, 1.05)}
-    90% {transform: scale(1, 1.02)}
-    100% {transform: scale(1, 1)}
+}
+
+.svg-wave-bottom {
+    @include svg-wave;
+    animation: moving-wave 7s ease-in-out infinite;
+    transform-origin: top;
 }
 
 .space-under {

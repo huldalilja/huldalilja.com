@@ -24,7 +24,8 @@ class Card extends PureComponent {
                 <div className="flip-card-inner">
                     <div className={"flip-card-front" + foldedClassName}>
                         <div className="card-header">
-                            <img className="company-logo" src={this.props.logo} alt={this.props.alt}></img>
+                            {/* Writing width and height here to prevent reflow from lazy-loaded images */}
+                            <img className="company-logo" src={this.props.logo} height="70px" alt={this.props.companyName + " logo"}></img>
                             <p>{this.props.companyName}</p>
                         </div>
                         <div className="card-content">
@@ -33,7 +34,7 @@ class Card extends PureComponent {
                     </div>
                     <div className={"flip-card-back"}>
                         <a target="_blank" rel="noopener noreferrer" href={this.props.companyLink}>
-                            <img className="company-logo" src={backLogo} alt={this.props.alt}></img>
+                            <img className="company-logo" src={backLogo} height="70px" alt={this.props.alt}></img>
                         </a>
                         {this.props.back}
                     </div>

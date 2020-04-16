@@ -62,26 +62,35 @@ a:hover {
 ::selection {
   background: #FBAC16; }
 
-.button {
-  border-radius: 10px;
-  border-width: 5px;
-  border-style: dashed;
-  display: block;
-  margin: auto;
-  width: 235px;
-  height: 50px;
-  color: white;
-  font-size: 1.3rem;
-  background-color: #FBAC16;
-  border-width: 0px;
-  border-color: #ffecb3;
-  transition: border-width 0.5s;
-  position: relative;
-  z-index: 1;
-  cursor: pointer; }
+.footer {
+  width: 100%;
+  background-color: #ffecb3;
+  text-align: center;
+  height: 200px;
+  margin: 0px;
+  padding-top: 20px; }
 
-.button:hover {
-  border-width: 5px; }
+.svg-wave {
+  vertical-align: bottom; }
 
-button:active {
-  transform: scale(1.05); }
+.primary-light-wave {
+  fill: #ffecb3; }
+
+.social-icon {
+  padding: 15px;
+  font-size: xxx-large;
+  margin: 30px;
+  color: #FBAC16;
+  transition: color .8s ease-in-out; }
+
+.linkedin:hover {
+  color: #0e76a8; }
+
+.instagram:hover {
+  color: #E1306C; }
+
+.github:hover {
+  color: black; }
+
+.envelope:hover {
+  color: #188ee8; }

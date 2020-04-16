@@ -1,36 +1,39 @@
 @import '../../theme';
 @import '../../globals';
 
+$nav-bar-size: -57px;
+
 #navbar {
     background-color: $primary-color-dark;
     color: white;
     opacity: 0.8;
     position: fixed;
-    top: -57px;
+    top: $nav-bar-size;
     width: 100%;
-    display: block;
     transition: top 0.3s;
     z-index: 2;
 }
 
-ul {
+#navbar > ul {
     margin: 0px;
+    padding: 0px;
 }
 
-#navbar a {
+@mixin nav-link {
     padding: 12px;
     color: white;
     text-decoration: none;
     font-size: 17px;
-    width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-    text-align: center; /* If you want the text to be centered */
 }
 
 .nav-item {
+    @include nav-link;
+    width: 20%; /* Five equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
     float: left;
 }
 
-#navbar a:hover {
+.nav-item:hover {
     background-color: $primary-color;
     font-weight: bold;
     transition: background-color .5s ease-in-out, font-weight 0.5s ease-in-out;
@@ -42,36 +45,81 @@ ul {
     transition: background-color .5s ease-in-out, font-weight 0.5s ease-in-out;
 }
 
-.invisible-navbar {
-    top: -57px;
+.hamburger {
+    @include nav-link;
+    background-color: transparent;
+    display: none;
+    padding-right: 30px!important;
+}
+
+.hidden-navbar {
+    top: $nav-bar-size;
 }
 
 .visible-navbar {
     top: 0px !important;
 }
 
-.hamburger {
-    display: none;
+.turn-right {
+    animation: turn-right .2s ease;
+}
+
+.turn-left {
+    animation: turn-left .2s ease;
+}
+
+.go-to-top-icon {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    color: $primary-color-accent;
+    font-size: xx-large;
+    transition: all 0.2s ease;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.go-to-top-icon:hover, .go-to-top-icon:active{
+    transform: scale(1.1);
+}
+
+.hidden-icon {
+    opacity: 0;
+    cursor: auto;
+}
+
+@keyframes turn-right {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(90deg)}
+}
+
+@keyframes turn-left {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(-90deg)}
 }
 
 @media screen and (max-width: 600px) {
-    .nav-item {display: none;}
+    .nav-item {
+        display: none;
+    }
+
     .hamburger {
-        float: right;
+        float: none;
+        text-align: right !important;
+        width: 100% !important;
         display: block;
     }
-}
 
-@media screen and (max-width: 600px) {
-    .navbar.responsive {position: relative;}
-    .navbar.responsive .hamburger {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .navbar.responsive a {
+    .responsive-visible {
         float: none;
         display: block;
-        text-align: left;
+        width: 100% !important;
+        animation: show-nav 0.2s ease;
+    }
+
+    @keyframes show-nav {
+        from {transform: scale(1, 0)}
+        to {transform: scale(1, 1)}
     }
 }

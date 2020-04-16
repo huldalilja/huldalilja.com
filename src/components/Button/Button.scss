@@ -12,11 +12,13 @@
     border-width: 0px;
     border-color: $primary-color-background;
     transition: border-width 0.5s;
+    position:relative;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .button:hover {
     border-width: 5px;
-    cursor: pointer;
 }
 
 button:active {

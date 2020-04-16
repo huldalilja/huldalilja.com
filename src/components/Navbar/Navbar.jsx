@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Fragment, Component } from 'react';
 import "./Navbar.scss"
 import Scrollspy from 'react-scrollspy'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,24 +9,48 @@ constructor(props) {
     super(props);
     window.onscroll= () => this.scrollFunction()
     this.state = {
-      visible: false
+      visible: false,
+      responsiveBarVisible: "",
+      turnHamburger: "",
+      hamburgerIcon: "bars",
+      topIconVisible: false
     };
   }
 
 scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     this.setState({
-      visible: true
+      visible: true,
+      topIconVisible: true
     });
   } else {
     this.setState({
-      visible: false
+      visible: false,
+      topIconVisible: false
     });
   }
 }
 
-showNavItems() {
+topFunction = () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
+showNavItems = () => {
+  if (this.state.responsiveBarVisible === "") {
+    this.setState({
+      responsiveBarVisible: " responsive-visible",
+      turnHamburger: "turn-right",
+      hamburgerIcon: "times"
+    })
+  }
+  else {
+    this.setState({
+      responsiveBarVisible: "",
+      turnHamburger: "turn-left",
+      hamburgerIcon: "bars"
+    })
+  }
 }
 
 render() {
@@ -38,19 +62,27 @@ render() {
     classname = "invisible-navbar";
   }
   const classnames = classname;
+  const turnHamburger = this.state.turnHamburger;
+  const hamburgerIcon = this.state.hamburgerIcon;
+  let iconClass = ""
+  if (!this.state.topIconVisible) {
+      iconClass = "hidden-icon"
+  }
   return (
-    <div id="navbar" className={classnames}>
-      <Scrollspy items={ ['HelloDiv', 'ExperienceDiv', 'EducationDiv', 'ProjectsDiv', 'MoreDiv'] } currentClassName="active-link">
-        <a className="nav-item" href="#Hello">Hello</a>
-        <a className="nav-item" href="#Experience">Experience</a>
-        <a className="nav-item" href="#Education">Education</a>
-        <a  className="nav-item" href="#Projects">Projects</a>
-        <a  className="nav-item" href="#More">More</a>
-        <a  onClick={this.showNavItems()} className="nav-item" className="hamburger"><FontAwesomeIcon icon="bars"/></a>
-      </Scrollspy>
-    </div>
-
-  )
+      <Fragment>
+        <div id="navbar" className={classnames}>
+          <Scrollspy items={ ['NothingDiv', 'HelloDiv', 'ExperienceDiv', 'EducationDiv', 'ProjectsDiv', 'ActivitiesDiv'] } currentClassName="active-link">
+            <a  onClick={this.showNavItems} className="hamburger"><FontAwesomeIcon className={turnHamburger} icon={hamburgerIcon}/></a>
+            <a className={"nav-item" + this.state.responsiveBarVisible} href="#Hello">Hello</a>
+            <a className={"nav-item" + this.state.responsiveBarVisible} href="#Experience">Experience</a>
+            <a className={"nav-item" + this.state.responsiveBarVisible} href="#Education">Education</a>
+            <a className={"nav-item" + this.state.responsiveBarVisible} href="#Projects">Projects</a>
+            <a className={"nav-item" + this.state.responsiveBarVisible} href="#Activities">Activities</a>
+          </Scrollspy>
+        </div>
+        <FontAwesomeIcon onClick={this.topFunction} className={"go-to-top-icon " + iconClass}  icon="arrow-circle-up"/>
+      </Fragment>
+    )
   }
 }
 

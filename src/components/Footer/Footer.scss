@@ -17,3 +17,27 @@
 .primary-light-wave {
     fill: $primary-color-background;
 }
+
+.social-icon {
+    padding: 15px;
+    font-size: xxx-large;
+    margin: 30px;
+    color: $primary-color-accent;
+    transition: color .8s ease-in-out;
+}
+
+.linkedin:hover {
+    color: #0e76a8;
+}
+
+.instagram:hover {
+    color: #E1306C;
+}
+
+.github:hover {
+    color: black;
+}
+
+.envelope:hover {
+    color: rgb(24,142,232);
+}

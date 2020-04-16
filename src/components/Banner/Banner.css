@@ -4,9 +4,6 @@
   text-align: center;
   color: #3f729b; }
 
-p {
-  font-size: 1.2rem; }
-
 a.anchor {
   display: block;
   position: relative;
@@ -30,41 +27,31 @@ a {
   transition: all .2s ease-in-out; }
 
 a:hover {
-  font-weight: bold; }
+  font-weight: bold;
+  cursor: pointer; }
 
 .secondary-light-wave {
   fill: #abc6db; }
 
-.svg-wave {
-  vertical-align: bottom;
-  animation: moving-wave 5s linear infinite; }
-
 .svg-wave-top {
-  vertical-align: bottom; }
+  animation: moving-wave 7s ease-in-out infinite;
+  position: relative;
+  z-index: 0;
+  vertical-align: bottom;
+  transform-origin: bottom; }
 
 @keyframes moving-wave {
-  0% {
+  0%, 100% {
     transform: scale(1, 1); }
-  10% {
-    transform: scale(1, 1.05); }
-  20% {
-    transform: scale(1, 1.15); }
-  30% {
-    transform: scale(1, 1.2); }
-  40% {
-    transform: scale(1, 1.23); }
   50% {
-    transform: scale(1, 1.23); }
-  60% {
-    transform: scale(1, 1, 2); }
-  70% {
-    transform: scale(1, 1.1); }
-  80% {
-    transform: scale(1, 1.05); }
-  90% {
-    transform: scale(1, 1.02); }
-  100% {
-    transform: scale(1, 1); } }
+    transform: scale(1, 1.23); } }
+
+.svg-wave-bottom {
+  animation: moving-wave 7s ease-in-out infinite;
+  position: relative;
+  z-index: 0;
+  animation: moving-wave 7s ease-in-out infinite;
+  transform-origin: top; }
 
 .space-under {
   margin-bottom: 40px; }
@@ -75,20 +62,31 @@ a:hover {
 ::selection {
   background: #FBAC16; }
 
-.slideshow {
+.bg {
+  height: 100vh;
+  background-color: #ffecb3; }
+
+.light-primary-wave {
+  fill: #ffecb3; }
+
+.circle {
   border-radius: 10px;
   border-width: 5px;
   border-style: dashed;
-  border-radius: 10px;
-  border-color: #FBAC16;
-  background-color: #fff0c2;
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 35px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #fff0c2;
+  border-color: #f5c262; }
+
+.logo {
   display: block;
   margin: auto;
-  width: 100%; }
+  width: 50%;
+  margin-top: 1rem; }
 
-.slideshow-img {
-  width: 100%; }
+.circle div {
+  margin: 1rem; }

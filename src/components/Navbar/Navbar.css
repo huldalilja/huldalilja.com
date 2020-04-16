@@ -1,0 +1,172 @@
+.title {
+  font-size: 2.3rem;
+  font-family: Pacifico, cursive;
+  text-align: center;
+  color: #3f729b; }
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -67px;
+  visibility: hidden; }
+
+.company-logo {
+  display: block;
+  margin: auto;
+  max-width: 100px;
+  max-height: 70px;
+  transition: all .2s ease-in-out;
+  opacity: 0.8; }
+
+.company-logo:hover {
+  transform: scale(1.1); }
+
+a {
+  color: #FBAC16;
+  text-decoration: none;
+  transition: all .2s ease-in-out; }
+
+a:hover {
+  font-weight: bold;
+  cursor: pointer; }
+
+.secondary-light-wave {
+  fill: #abc6db; }
+
+.svg-wave-top {
+  animation: moving-wave 7s ease-in-out infinite;
+  position: relative;
+  z-index: 0;
+  vertical-align: bottom;
+  transform-origin: bottom; }
+
+@keyframes moving-wave {
+  0%, 100% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(1, 1.23); } }
+
+.svg-wave-bottom {
+  animation: moving-wave 7s ease-in-out infinite;
+  position: relative;
+  z-index: 0;
+  animation: moving-wave 7s ease-in-out infinite;
+  transform-origin: top; }
+
+.space-under {
+  margin-bottom: 40px; }
+
+::-moz-selection {
+  background: #FBAC16; }
+
+::selection {
+  background: #FBAC16; }
+
+#navbar {
+  background-color: #dd9a1e;
+  color: white;
+  opacity: 0.8;
+  position: fixed;
+  top: -57px;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 2; }
+
+#navbar > ul {
+  margin: 0px;
+  padding: 0px; }
+
+.nav-item {
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%;
+  /* Five equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center;
+  /* If you want the text to be centered */
+  float: left; }
+
+.nav-item:hover {
+  background-color: #f5c262;
+  font-weight: bold;
+  transition: background-color .5s ease-in-out, font-weight 0.5s ease-in-out; }
+
+.active-link {
+  background-color: #f5c262;
+  font-weight: bold;
+  transition: background-color .5s ease-in-out, font-weight 0.5s ease-in-out; }
+
+.hamburger {
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: transparent;
+  display: none;
+  padding-right: 30px !important; }
+
+.hidden-navbar {
+  top: -57px; }
+
+.visible-navbar {
+  top: 0px !important; }
+
+.turn-right {
+  animation: turn-right .2s ease; }
+
+.turn-left {
+  animation: turn-left .2s ease; }
+
+.go-to-top-icon {
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  color: #FBAC16;
+  font-size: xx-large;
+  transition: all 0.2s ease;
+  opacity: 1;
+  cursor: pointer; }
+
+.go-to-top-icon:hover, .go-to-top-icon:active {
+  transform: scale(1.1); }
+
+.hidden-icon {
+  opacity: 0;
+  cursor: auto; }
+
+@keyframes turn-right {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(90deg); } }
+
+@keyframes turn-left {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(-90deg); } }
+
+@media screen and (max-width: 600px) {
+  .nav-item {
+    display: none; }
+  .hamburger {
+    float: none;
+    text-align: right !important;
+    width: 100% !important;
+    display: block; }
+  .responsive-visible {
+    float: none;
+    display: block;
+    width: 100% !important;
+    animation: show-nav 0.2s ease; }
+  @keyframes show-nav {
+    from {
+      transform: scale(1, 0); }
+    to {
+      transform: scale(1, 1); } } }

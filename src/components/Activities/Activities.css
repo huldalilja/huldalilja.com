@@ -1,0 +1,176 @@
+.title {
+  font-size: 2.3rem;
+  font-family: Pacifico, cursive;
+  text-align: center;
+  color: #3f729b; }
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -67px;
+  visibility: hidden; }
+
+.company-logo {
+  display: block;
+  margin: auto;
+  max-width: 100px;
+  max-height: 70px;
+  transition: all .2s ease-in-out;
+  opacity: 0.8; }
+
+.company-logo:hover {
+  transform: scale(1.1); }
+
+a {
+  color: #FBAC16;
+  text-decoration: none;
+  transition: all .2s ease-in-out; }
+
+a:hover {
+  font-weight: bold;
+  cursor: pointer; }
+
+.secondary-light-wave {
+  fill: #abc6db; }
+
+.svg-wave-top {
+  animation: moving-wave 7s ease-in-out infinite;
+  position: relative;
+  z-index: 0;
+  vertical-align: bottom;
+  transform-origin: bottom; }
+
+@keyframes moving-wave {
+  0%, 100% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(1, 1.23); } }
+
+.svg-wave-bottom {
+  animation: moving-wave 7s ease-in-out infinite;
+  position: relative;
+  z-index: 0;
+  animation: moving-wave 7s ease-in-out infinite;
+  transform-origin: top; }
+
+.space-under {
+  margin-bottom: 40px; }
+
+::-moz-selection {
+  background: #FBAC16; }
+
+::selection {
+  background: #FBAC16; }
+
+* {
+  box-sizing: border-box; }
+
+/* Slideshow container */
+.slideshow-container {
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: dashed;
+  padding: 32px;
+  color: #FBAC16;
+  background-color: #ffecb3;
+  width: 60%;
+  position: relative;
+  margin: auto; }
+
+/* Hide the images by default */
+.mySlides {
+  display: none; }
+
+.show {
+  display: block; }
+
+/* Next & previous buttons */
+.prev, .next {
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: dashed;
+  border-color: #FBAC16;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 10px 19px;
+  background-color: #FBAC16;
+  color: #ffecb3;
+  font-size: xx-large;
+  font-weight: bolder;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  user-select: none; }
+
+/* Position the "next button" to the right */
+.next {
+  right: -32px; }
+
+.prev {
+  left: -32px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  border-color: #ffecb3; }
+
+/* Caption text */
+.text {
+  color: #3f729b;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.carousel-dots {
+  width: 100%;
+  text-align: center; }
+
+.active, .dot:hover {
+  background-color: #717171; }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+.carousel-img {
+  max-width: 100%; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@media screen and (max-width: 800px) {
+  .slideshow-container {
+    width: 100%; } }
