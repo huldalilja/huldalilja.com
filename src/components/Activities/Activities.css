@@ -66,111 +66,136 @@ a:hover {
   box-sizing: border-box; }
 
 /* Slideshow container */
-.slideshow-container {
+.carousel-container {
   border-radius: 10px;
   border-width: 5px;
   border-style: dashed;
-  padding: 32px;
+  padding: 15px 28px;
   color: #FBAC16;
   background-color: #ffecb3;
-  width: 60%;
+  width: 45%;
   position: relative;
   margin: auto; }
 
-/* Hide the images by default */
-.mySlides {
-  display: none; }
+.carousel-title {
+  margin-bottom: 15px; }
 
-.show {
-  display: block; }
+.carousel-img {
+  max-width: 100%;
+  border-radius: 5px;
+  user-select: none; }
 
 /* Next & previous buttons */
 .prev, .next {
   border-radius: 10px;
   border-width: 5px;
   border-style: dashed;
-  border-color: #FBAC16;
   position: absolute;
   top: 50%;
   margin-top: -22px;
-  padding: 10px 19px;
+  height: 50px;
+  width: 50px;
   background-color: #FBAC16;
   color: #ffecb3;
-  font-size: xx-large;
-  font-weight: bolder;
-  font-size: 18px;
-  transition: 0.6s ease;
+  border-color: #ffecb3;
+  border-width: 0px;
   border-radius: 50%;
+  font-weight: bolder;
+  font-size: x-large;
+  transition: 0.6s ease;
   user-select: none; }
+
+.center-inside {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
 
 /* Position the "next button" to the right */
 .next {
-  right: -32px; }
+  right: -28px; }
 
 .prev {
-  left: -32px; }
+  left: -28px; }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a border */
 .prev:hover, .next:hover {
-  border-color: #ffecb3; }
+  border-width: 5px; }
 
 /* Caption text */
 .text {
-  color: #3f729b;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center; }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0; }
+  color: white;
+  padding: 15px;
+  opacity: 0.9;
+  background-color: #3f729b;
+  width: 90%;
+  margin-top: -70px !important;
+  height: 120px;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px; }
 
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
+  margin: 0 5px;
+  width: 25px;
+  height: 25px;
+  background-color: #ffecb3;
+  border: 4px solid #FBAC16;
   border-radius: 50%;
+  z-index: 1;
   display: inline-block;
-  transition: background-color 0.6s ease; }
+  transition: background-color 0.6s ease;
+  position: relative;
+  z-index: 1; }
 
 .carousel-dots {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  margin-top: 20px; }
 
 .active, .dot:hover {
-  background-color: #717171; }
+  background-color: #FBAC16; }
+
+/* Fading animation, two different names so can switch when changing image and replay animation */
+.fade {
+  animation: fade-in 1s ease-in; }
 
 /* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s; }
+.fade2 {
+  animation: fade-in2 1s ease-in; }
 
-.carousel-img {
-  max-width: 100%; }
-
-@-webkit-keyframes fade {
+@keyframes fade-in {
   from {
-    opacity: .4; }
+    opacity: 0.4; }
   to {
     opacity: 1; } }
 
-@keyframes fade {
+@keyframes fade-in2 {
   from {
-    opacity: .4; }
+    opacity: 0.4; }
   to {
     opacity: 1; } }
 
-@media screen and (max-width: 800px) {
-  .slideshow-container {
+@media screen and (max-width: 1000px) {
+  .carousel-container {
+    width: 70%; } }
+
+@media screen and (max-width: 700px) {
+  .carousel-container {
     width: 100%; } }
+
+@media screen and (max-width: 505px) {
+  .text {
+    height: 170px;
+    width: 95%; } }
+
+@media screen and (max-width: 400px) {
+  .text {
+    height: 220px; } }
+
+@media screen and (max-width: 370px) {
+  .text {
+    height: 270px;
+    width: 97%; } }
