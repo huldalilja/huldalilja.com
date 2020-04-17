@@ -4,5 +4,5 @@ My personal website made in React and with Sass.
 
 Big thanks to https://getwaves.io/  &  https://www.w3schools.com/  !
 
-![GitHub Logo](https://ibb.co/v4Bsn4X)
+![Full screenshot of huldalilja.com](/screenshot.png)
 Format: ![Alt Text](url)
