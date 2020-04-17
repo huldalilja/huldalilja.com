@@ -23,7 +23,7 @@ const schools = [
         logo:HRlogo,
         title:"Reykjavík University",
         period : "2015-2018: BSc in Software Engineering." ,
-        extraInfo: "New-students’ scholarship when I started. After the second and fourth semesters I was a dean's list recipient. Teacher Assistant in Calculus II. Helped students with homework assignments and graded the course."
+        extraInfo: "New-students’ scholarship when I started. After the second and fourth semesters I was a dean's list recipient."
     },
     {
         logoLink:"https://www.verslo.is/english/about-us/",
