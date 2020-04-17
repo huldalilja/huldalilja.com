@@ -36,7 +36,7 @@ class Card extends PureComponent {
                         <a target="_blank" rel="noopener noreferrer" href={this.props.companyLink}>
                             {/* Skipping because img made slow loading in Google Chrome when flipped
                             <img className="company-logo" src={backLogo} height="70px" alt={this.props.alt}></img>*/}
-                            <p>{this.props.companyName}</p>
+                            <p className="company-name-back">{this.props.companyName}</p>
                         </a>
                         {this.props.back}
                     </div>

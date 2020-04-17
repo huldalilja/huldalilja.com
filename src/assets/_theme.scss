@@ -111,7 +111,7 @@ a:hover {
     @include svg-wave;
     vertical-align:bottom;
     transform-origin: bottom;
-    top: 1px;
+    top: 3px;
 }
 
 @keyframes moving-wave {
@@ -123,7 +123,7 @@ a:hover {
     @include svg-wave;
     animation: moving-wave 7s ease-in-out infinite;
     transform-origin: top;
-    top: -1px;
+    top: -3px;
 }
 
 .space-under {
