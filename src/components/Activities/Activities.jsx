@@ -1,11 +1,7 @@
 import React, { PureComponent} from 'react'
 import "./Activities.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import isiimg from "../../assets/carousel/isi.jpg";
-import ahugamalislendinga from "../../assets/carousel/ahugamal-islendinga.jpg";
-import systur from "../../assets/carousel/systur.jpg";
-import sailingimg from "../../assets/carousel/sailing.jpg";
-import santander from "../../assets/carousel/santander.JPG"
+import slides from './Slides.js';
 
 class Activities extends PureComponent {
     constructor(props) {
@@ -14,34 +10,9 @@ class Activities extends PureComponent {
         this.state = {
             skipOneAutomaticChange: false,
             imgFadeClass: true,
-            slideIndex: 0,
-            slides: [
-                {
-                    text: "My brother and I in a movie called",
-                    img: ahugamalislendinga,
-                    link: " Icelandic Hobbies.",
-                    url: "https://www.youtube.com/watch?v=MQE-UYHYUYc"
-                },
-                {
-                    text: "Member of the board in /sys/tur (2016-2017) an organization for female students at the computer science department at Reykjavík University.",
-                    img: systur
-                },
-                {
-                    text: "Been chosen female sailor of the year in Iceland nine times in the last 10 years.",
-                    img: isiimg
-                },
-                {
-                    text: "Secretary of the board for Brokey - Reykjavík Yacht club in 2019.",
-                    img: sailingimg
-                },
-                {
-                    text: "Been an Icelandic representative at various of international",
-                    img: santander,
-                    link: " sailing regattas.",
-                    url: "https://brokey.is/styrkur-vegna-landslidsverkefna/"
-                }
-            ]
+            slideIndex: 0
         }
+        this.slides = slides;
     }
 
     componentDidMount() {
@@ -60,11 +31,11 @@ class Activities extends PureComponent {
 
     plusSlides= (n) => {
         var idx = this.state.slideIndex + n;
-        if (idx >= this.state.slides.length) {
+        if (idx >= this.slides.length) {
             idx = 0;
         }
         else if (idx < 0) {
-            idx = this.state.slides.length - 1;
+            idx = this.slides.length - 1;
         }
         this.setState({
             skipOneAutomaticChange: true,
@@ -84,7 +55,7 @@ class Activities extends PureComponent {
 
 
     render() {
-        var slides = this.state.slides;
+        var slides = this.slides;
         var imglink = null;
         var imgClassNames = "carousel-img"
         if (!this.state.imgFadeClass){
@@ -93,9 +64,9 @@ class Activities extends PureComponent {
         else {
             imgClassNames += " fade2"
         }
-        if (this.state.slides[this.state.slideIndex].link !== undefined) {
+        if (this.slides[this.state.slideIndex].link !== undefined) {
             imglink =(
-                <a target="_blank" rel="noopener noreferrer" href={this.state.slides[this.state.slideIndex].url}><br/>{this.state.slides[this.state.slideIndex].link}</a>
+                <a target="_blank" rel="noopener noreferrer" href={this.slides[this.state.slideIndex].url}><br/>{this.slides[this.state.slideIndex].link}</a>
             )
         }
         return (
@@ -103,8 +74,8 @@ class Activities extends PureComponent {
                 <div className="carousel-container">
                     <a href="./" className="anchor" id="Activities">a</a>
                     <div className="title carousel-title">Activities <FontAwesomeIcon icon="anchor" className="wave"/></div>
-                    <img className={imgClassNames} alt="" src={this.state.slides[this.state.slideIndex].img}/>
-                    <div className="text">{this.state.slides[this.state.slideIndex].text}
+                    <img className={imgClassNames} alt="" src={this.slides[this.state.slideIndex].img}/>
+                    <div className="text">{this.slides[this.state.slideIndex].text}
                         {imglink}
                     </div>
                     <a className="prev" onClick={ () => {
@@ -116,7 +87,6 @@ class Activities extends PureComponent {
                 </div>
 
                 <div className="carousel-dots">
-
                     {slides.map((item, idx) => {
                         let classNames = "dot";
                         if (this.state.slideIndex === idx) {

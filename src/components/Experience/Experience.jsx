@@ -2,12 +2,7 @@ import React, { PureComponent, Fragment } from 'react'
 import "./Experience.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Card from "../Card/Card"
-import HRlogo from "../../assets/hr.svg";
-import Mimirlogo from "../../assets/mimir.svg";
-import NPAlogo from "../../assets/npa.svg";
-import Brokeylogo from "../../assets/brokey.svg";
-import Reglalogo from "../../assets/regla.svg";
-import Datawelllogo from "../../assets/datawell.svg";
+import works from "./works"
 
 class Experience extends PureComponent {
     constructor(props) {
@@ -16,6 +11,7 @@ class Experience extends PureComponent {
         this.state = {
             
         }
+        this.works = works
     }
 
     render() {
@@ -29,40 +25,19 @@ class Experience extends PureComponent {
                         <div className="experiences">
                             <div className="title space-under">Experience <FontAwesomeIcon icon="briefcase" className="wave"/></div>
                             <div className="row">
-                                <Card logo={Reglalogo} companyName="Regla ehf/ Fakta ehf" companyLink="https://www.regla.is/is/vorur/verkbokhald/"
-                                    period="Summers of 2017 and 2018, part-time 2018-2020" 
-                                    description="Cross-platform and web developer"
-                                    folded={true}
-                                    back={(<p>Made the company’s first cross-platform mobile app(Xamarin Forms), available on android and iOS.
-                                            Made a responsive website(ASP.NET) with some of the company’s features as well as new ones that required adopting all layers.</p>)}>
-                                </Card>
-                                <Card logo={HRlogo} companyName="Reykjavík University" companyLink="http://datawell.ru.is"
-                                    period="August 2018 - Spring 2020" 
-                                    description="Research assistant, working as a full-stack developer"
-                                    backLogo={Datawelllogo}
-                                    folded={true}
-                                    back={(<p>Creating a sport and health data platform(Datawell) in Django and React in cooperation with the Sports Science Department. 
-                                        Automatically gathering consecutive and single measurements and visualizing the data.</p>)}>
-                                </Card>
-                                <Card logo={Mimirlogo} companyName="Mímir símenntun" companyLink="https://www.mimir.is/is/moya/page/staerdfraedi-menntastodir"
-                                    period="Winter 2019-2020" 
-                                    description="Math teacher at a high school level"
-                                    folded={true}
-                                    back={(<p>Teaching math at a high school level for individuals returning to school along with my dad. Part-time remotely due to circumstances.
-                                        Inspired me to write a post about <a target="_blank" rel="noopener noreferrer" href="https://lostincode.blog/2020/03/11/studying-math-focus/">studying math</a>.</p>)}>
-                                </Card>
-                                <Card logo={NPAlogo} companyName="NPA miðstöðin" companyLink="https://www.npa.is"
-                                    period="2014-2015" 
-                                    description="Assistant to a paraplegic person"
-                                    folded={true}
-                                    back={(<p>Duties included assisting a paraplegic person that is deaf-blind with everyday life. Used tactile signing to communicate with her on a daily basis.</p>)}>
-                                </Card>
-                                <Card logo={Brokeylogo} companyName="Brokey - Reykjavík Yacht club " companyLink="https://www.brokey.is"
-                                    period="Summers 2011-2015" 
-                                    description="Dinghy sailing coach" 
-                                    folded={true}
-                                    back={(<p>Taught beginners to sail in the summer. I held courses at the sailing club alongside two More employees.</p>)}>
-                                </Card>
+                                {this.works.map((item, idx) => {
+                                    return (
+                                        <Card key={idx}
+                                            logo={item.logo} 
+                                            companyName={item.companyName}
+                                            companyLink={item.companyLink} 
+                                            period={item.period} 
+                                            description={item.description}
+                                            back={item.back} 
+                                            folded={true}>
+                                        </Card>
+                                    )
+                                })}
                             </div>
                         </div>
                     </div>

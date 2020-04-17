@@ -11,6 +11,7 @@ import Experience from "./components/Experience/Experience"
 import Projects from "./components/Projects/Projects"
 import Footer from "./components/Footer/Footer"
 import Activities from "./components/Activities/Activities"
+import Statcounter from "./components/Statcounter/Statcounter"
 
 library.add(faEnvelope, faAnchor, faArrowCircleUp, faChevronCircleDown, faChevronCircleUp, faTimes, faBars, faHammer, faDownload, fab, faHandSpock, faHandPaper, faAward, faFolder, faBriefcase, faBook);
 
@@ -26,6 +27,7 @@ function App() {
       <Projects/>
       <Activities/>
       <Footer/>
+      <Statcounter/>
     </Fragment>
   );
 }
