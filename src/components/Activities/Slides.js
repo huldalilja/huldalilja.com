@@ -6,12 +6,6 @@ import santander from "../../assets/carousel/santander.JPG"
 
 const slides = [
     {
-        text: "My brother and I in a movie called",
-        img: ahugamalislendinga,
-        link: " Icelandic Hobbies.",
-        url: "https://www.youtube.com/watch?v=MQE-UYHYUYc"
-    },
-    {
         text: "Member of the board in /sys/tur (2016-2017) an organization for female students at the computer science department at Reykjavík University.",
         img: systur
     },
@@ -28,6 +22,12 @@ const slides = [
         img: santander,
         link: " sailing regattas.",
         url: "https://brokey.is/styrkur-vegna-landslidsverkefna/"
+    },
+    {
+        text: "My brother and I in a movie called",
+        img: ahugamalislendinga,
+        link: " Icelandic Hobbies.",
+        url: "https://www.youtube.com/watch?v=MQE-UYHYUYc"
     }
 ]
 

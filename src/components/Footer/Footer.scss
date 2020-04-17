@@ -5,7 +5,6 @@
     width: 100%;
     background-color: $primary-color-background;
     text-align: center;
-    height: 200px;
     margin: 0px;
     padding-top: 20px;
 }
@@ -39,4 +38,11 @@
 
 .envelope:hover {
     color: rgb(24,142,232);
+}
+
+.made-by-text {
+    color: $secondary-color;
+    font-family: Pacifico, cursive;
+    font-size: 1.5rem;
+    padding-bottom: 30px;
 }
