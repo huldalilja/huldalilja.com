@@ -97,20 +97,8 @@ a:hover {
   font-weight: bold;
   transition: background-color .5s ease-in-out, font-weight 0.5s ease-in-out; }
 
-.hamburger {
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  background-color: transparent;
-  display: none;
-  padding-right: 30px !important; }
-
 .hidden-navbar {
   top: -57px; }
-
-.visible-navbar {
-  top: 0px !important; }
 
 .turn-right {
   animation: turn-right .2s ease; }
@@ -151,6 +139,18 @@ a:hover {
     transform: rotate(0deg); }
   to {
     transform: rotate(-90deg); } }
+
+.hamburger {
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: transparent;
+  display: none;
+  padding-right: 30px; }
+
+.visible-navbar {
+  top: 0px !important; }
 
 @media screen and (max-width: 600px) {
   .nav-item {

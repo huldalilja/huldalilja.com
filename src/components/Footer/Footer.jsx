@@ -30,7 +30,7 @@ class Footer extends PureComponent {
                     <a href = "mailto:hulda@huldalilja.com?subject=What's up?&body=Hello!" target="_blank" rel="noopener noreferrer" className="social-icon envelope">
                         <FontAwesomeIcon icon="envelope"/>
                     </a>
-                    <p>Made in by: Hulda Lilja Hannesdóttir</p>
+                    <p>Made by: Hulda Lilja Hannesdóttir</p>
                 </div>
             </Fragment>
         )
