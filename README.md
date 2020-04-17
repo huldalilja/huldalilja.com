@@ -4,5 +4,4 @@ My personal website made in React and with Sass.
 
 Big thanks to https://getwaves.io/  &  https://www.w3schools.com/  !
 
-![Full screenshot of huldalilja.com](/screenshot.png)
-Format: ![Alt Text](url)
+![Full screenshot of huldalilja.com](/screenshot.png =100px)
