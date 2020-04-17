@@ -15,6 +15,7 @@ import Activities from "./components/Activities/Activities"
 library.add(faEnvelope, faAnchor, faArrowCircleUp, faChevronCircleDown, faChevronCircleUp, faTimes, faBars, faHammer, faDownload, fab, faHandSpock, faHandPaper, faAward, faFolder, faBriefcase, faBook);
 
 function App() {
+  console.log("Hi there! You can also just have a look at the source code on GitHub: github.com/huldalilja/huldalilja.com or send me a line to hulda@huldalilja.com!")
   return (
     <Fragment>
       <Navbar/>

@@ -3,10 +3,8 @@ import "./Projects.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Card from "../Card/Card"
 import LostInCodelogo from "../../assets/lostincode.svg";
-import Aldalogo from "../../assets/aldagradient.svg"
 import SheepOfIcelandlogo from "../../assets/sheepoficeland.png"
 import HLHlogo from "../../assets/HLH.svg"
-import Regiftlogo from "../../assets/regift.svg"
 import BoatsFilled from "../../assets/boatsfilled.svg";
 
 class Projects extends PureComponent {
