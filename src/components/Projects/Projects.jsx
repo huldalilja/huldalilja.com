@@ -3,7 +3,7 @@ import "./Projects.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Card from "../Card/Card"
 import BoatsFilled from "../../assets/boatsfilled.svg";
-import projects from "./projects"
+import repos from "./repos.js"
 
 class Projects extends PureComponent {
     constructor(props) {
@@ -12,7 +12,7 @@ class Projects extends PureComponent {
         this.state = {
             
         }
-        this.projects = projects;
+        this.repos = repos;
     }
 
     render() {
@@ -25,7 +25,7 @@ class Projects extends PureComponent {
                         <div className="projects">
                             <div className="title space-under">Projects <FontAwesomeIcon icon="hammer"/></div>
                             <div className="row">
-                                {this.projects.map((item, idx) => {
+                                {this.repos.map((item, idx) => {
                                     return (
                                         <Card key={idx}
                                             logo={item.logo} 
