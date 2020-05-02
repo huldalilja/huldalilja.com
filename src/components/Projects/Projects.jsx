@@ -2,7 +2,6 @@ import React, { PureComponent, Fragment } from 'react'
 import "./Projects.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Card from "../Card/Card"
-import BoatsFilled from "../../assets/boatsfilled.svg";
 import repos from "./repos.js"
 
 class Projects extends PureComponent {
@@ -43,7 +42,7 @@ class Projects extends PureComponent {
                     </div>
                 </div>
                 <div className="secondary-light-bg" height="60px"></div>
-                <img src={BoatsFilled} width="100%" alt="" className="filled-boats space-under"></img>
+                <div width="100%" alt="" className="filled-boats space-under"></div>
             </Fragment>
         )
     }

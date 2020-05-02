@@ -1,10 +1,19 @@
-$primary-color-dark: rgb(221, 154, 30);
-$primary-color-accent: #FBAC16;
 $primary-color: #f5c262;
-$primary-color-background: #ffecb3;
-$primary-color-background-lighter: rgb(255,240,194);
+$primary-color-accent: #FBAC16;
+$primary-color-background: saturate(adjust-hue(lighten($primary-color, 18%),5), 50%);
+$primary-color-background-lighter: lighten($primary-color-background, 4%);
+$primary-color-dark: darken($primary-color, 20%);
 $secondary-color: #3f729b;
-$secondary-color-light: #5586ad;
-$secondary-color-lighter: #abc6db;
-$secondary-color-background: #d3dee6;
-$secondary-color-background-lighter: #e3eaf0;
+$secondary-color-lighter: lighten($secondary-color, 34%);
+$secondary-color-background: desaturate(lighten($secondary-color, 45%), 10%);
+$secondary-color-background-lighter: lighten($secondary-color-background, 5%);
+
+$dark-primary-color: #2f5a7c;
+$dark-primary-color-accent: #FBAC16;
+$dark-primary-color-background: darken($dark-primary-color, 15%);
+$dark-primary-color-background-lighter: lighten($dark-primary-color-background, 10%);
+$dark-primary-color-dark: darken($dark-primary-color, 20%);
+$dark-secondary-color: #111f2b;
+$dark-secondary-color-lighter: lighten($dark-secondary-color, 15%);
+$dark-secondary-color-background: $dark-primary-color-background-lighter;
+$dark-secondary-color-background-lighter: $dark-primary-color-background-lighter;

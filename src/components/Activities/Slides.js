@@ -2,7 +2,8 @@ import isiimg from "../../assets/carousel/isi.jpg";
 import ahugamalislendinga from "../../assets/carousel/ahugamal-islendinga.jpg";
 import systur from "../../assets/carousel/systur.jpg";
 import sailingimg from "../../assets/carousel/sailing.jpg";
-import santander from "../../assets/carousel/santander.JPG"
+import santander from "../../assets/carousel/santander.JPG";
+import trumpet from "../../assets/carousel/trumpet.jpg";
 
 const slides = [
     {
@@ -28,6 +29,10 @@ const slides = [
         img: ahugamalislendinga,
         link: " Icelandic Hobbies.",
         url: "https://www.youtube.com/watch?v=MQE-UYHYUYc"
+    },
+    {
+        text: "Final examination on classical trumpet in 2014. Participated in various projects, including playing with The Iceland Symphony Youth Orchestra.",
+        img: trumpet
     }
 ]
 

@@ -14,6 +14,10 @@ $carousel-padding: 28px;
     width: 45%;
     position: relative;
     margin: auto; 
+    @media screen and (prefers-color-scheme: dark) {
+        color: $dark-primary-color-accent;
+        background-color: $dark-primary-color-background;
+    }
 }
 
 .carousel-title {
@@ -43,6 +47,11 @@ $carousel-padding: 28px;
     font-size: x-large;
     transition: 0.6s ease;
     user-select: none;
+    @media screen and (prefers-color-scheme: dark) {
+        background-color: $dark-primary-color-accent;
+        color: $dark-primary-color-background;
+        border-color: $dark-primary-color-background;
+    }
 }
 
 .center-inside{
@@ -77,6 +86,10 @@ $carousel-padding: 28px;
     transition: background-color 0.6s ease;
     position:relative;
     z-index: 1;
+    @media screen and (prefers-color-scheme: dark) {
+        background-color: $dark-primary-color-background;
+        border: 4px solid $dark-primary-color-accent;
+    }
 }
 
 .carousel-dots {
@@ -87,6 +100,9 @@ $carousel-padding: 28px;
 
 .active, .dot:hover {
     background-color: $primary-color-accent;
+    @media screen and (prefers-color-scheme: dark) {
+        background-color: $dark-primary-color-accent;
+    }
 }
 
 /* Fading animation, two different names so can switch when changing image and replay animation */
@@ -111,6 +127,9 @@ $carousel-padding: 28px;
     margin: auto;
     text-align: center;
     border-radius: 5px;
+    @media screen and (prefers-color-scheme: dark) {
+        background-color: $dark-secondary-color;
+    }
 }
 
 @keyframes fade-in {

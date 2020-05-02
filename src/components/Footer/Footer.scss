@@ -7,6 +7,9 @@
     text-align: center;
     margin: 0px;
     padding-top: 20px;
+    @media screen and (prefers-color-scheme: dark) {
+        background-color: $dark-primary-color-background;
+    }
 }
 
 .svg-wave {
@@ -15,6 +18,9 @@
 
 .primary-light-wave {
     fill: $primary-color-background;
+    @media screen and (prefers-color-scheme: dark) {
+        fill: $dark-primary-color-background;
+    }
 }
 
 .social-icon {
@@ -22,6 +28,9 @@
     margin: 30px;
     color: $primary-color-accent;
     transition: color .8s ease-in-out;
+    @media screen and (prefers-color-scheme: dark) {
+        color: $dark-primary-color-accent;
+    }
 }
 
 .linkedin:hover {
@@ -45,4 +54,7 @@
     font-family: Pacifico, cursive;
     font-size: 1.5rem;
     padding-bottom: 30px;
+    @media screen and (prefers-color-scheme: dark) {
+        color: white;
+    }
 }

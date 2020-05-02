@@ -2,8 +2,11 @@
 @import '../../assets/theme';
 
 .secondary-light-bg {
-    background-color: $secondary-color-lighter;
-    margin: 0px;
+  background-color: $secondary-color-lighter;
+  margin: 0px;
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: $dark-primary-color-background;
+  }
 }
 
 .experiences {

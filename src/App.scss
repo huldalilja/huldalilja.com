@@ -5,6 +5,9 @@ body, html {
   height: 100%;
   background-color: $secondary-color;
   scroll-behavior: smooth;
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: $dark-secondary-color;
+  }
 }
 
 .page {

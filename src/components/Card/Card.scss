@@ -4,6 +4,9 @@
 $card-height: 390px;
 $card-width: 390px;
 
+.company-link {
+    color: $primary-color-accent !important;
+}
 
 /* Style the counter cards */
 @mixin card {
@@ -24,6 +27,7 @@ $card-width: 390px;
 
 .company-name-back {
     font-weight: bold;
+    color: $primary-color-accent;
 }
 
  /* Float four columns side by side */
@@ -89,6 +93,10 @@ $card-width: 390px;
     -moz-box-shadow: -5px -5px 5px rgba(0,0,0,0.3);
     box-shadow: -5px -5px 5px rgba(0,0,0,0.3);
     border-radius: 5px 0px 0px 0px; /* top left, top right, bottom right, bottom left */
+    @media screen and (prefers-color-scheme: dark) {
+        border-top: 35px solid $dark-secondary-color-background;
+        border-right: 35px solid $dark-primary-color-background;
+    }
 }
 
   /* Responsive columns - one column layout (vertical) on small screens */

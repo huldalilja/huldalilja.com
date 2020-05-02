@@ -12,8 +12,10 @@ box-sizing: border-box;
   border-radius: 50%;
   width: 250px;
   height: 170px;
-  background-color: $primary-color;
-  border-color: $primary-color;
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: $dark-primary-color-background;
+    border-color: $dark-primary-color-background;
+  }
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -31,6 +33,9 @@ box-sizing: border-box;
   bottom: 0;
   left: 50%;
   margin-left: -3px;
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: $dark-primary-color-background;
+  }
 }
 
 /* Media queries - Responsive timeline on screens less than 700px wide */

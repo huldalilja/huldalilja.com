@@ -4,6 +4,9 @@
 .secondary-light-bg {
     background-color: $secondary-color-lighter;
     margin: 0px;
+    @media screen and (prefers-color-scheme: dark) {
+      background-color: $dark-primary-color-background;
+    }
 }
 
 .projects {
@@ -23,6 +26,12 @@
 .filled-boats{
   animation: boat-on-wave 7s ease-in-out infinite;
   user-select: none;
+  background-image: url('../../assets/boatsfilled.svg');
+  height: 21vw;
+  background-repeat: no-repeat;
+  @media screen and (prefers-color-scheme: dark) {
+    background-image: url('../../assets/boatsfilled-dark.svg');
+  }
 }
 
 @keyframes boat-on-wave {

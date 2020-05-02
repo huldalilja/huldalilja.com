@@ -38,7 +38,7 @@ class TimelineCard extends PureComponent {
                     <p>{this.props.title}</p>
                     <p className="last-p">{this.props.period}</p>
                     <a onClick={this.showMore} className="show-more"><FontAwesomeIcon className={rotateClass} icon="chevron-circle-down"/></a>
-                    <div className={extraInfoClass}>{this.props.extraInfo}</div>
+                    <div className={extraInfoClass}><span className="small-text">{this.props.extraInfo}</span></div>
                 </div>
             </div>
         )

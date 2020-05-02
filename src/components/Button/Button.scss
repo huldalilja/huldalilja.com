@@ -15,6 +15,10 @@
     position:relative;
     z-index: 1;
     cursor: pointer;
+    @media screen and (prefers-color-scheme: dark) {
+        border-color: $dark-primary-color-background;
+        background-color: $dark-primary-color-accent;
+    }
 }
 
 .button:hover {

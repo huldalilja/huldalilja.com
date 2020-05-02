@@ -21,6 +21,10 @@
   top: 15px;
   border-radius: 50%;
   z-index: 1;
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: $dark-primary-color-background;
+    border: 4px solid $dark-primary-color-accent;
+  }
 }
 
 /* Place the container to the left */
@@ -45,6 +49,9 @@
   border: medium solid $primary-color-accent;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent $primary-color-accent;
+  @media screen and (prefers-color-scheme: dark) {
+    border-color: transparent transparent transparent $dark-primary-color-accent;
+  }
 }
 
 /* Add arrows to the right container (pointing left) */

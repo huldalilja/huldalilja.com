@@ -4,10 +4,16 @@
 .bg {
   height: 100vh;
   background-color: $primary-color-background;
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: $dark-primary-color-background;
+  }
 }
 
 .light-primary-wave {
   fill: $primary-color-background;
+  @media screen and (prefers-color-scheme: dark) {
+    fill: $dark-primary-color-background;
+  }
 }
 
 .circle {
@@ -17,6 +23,10 @@
   border-radius: 50%;
   background-color: $primary-color-background-lighter;
   border-color: $primary-color;
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: $dark-primary-color-background-lighter;
+    border-color: $dark-primary-color-accent;
+  }
 }
 
 .logo {

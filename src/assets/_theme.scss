@@ -15,11 +15,18 @@
     @include box-radius;
     border-color: $primary-color-accent;
     background-color: $primary-color-background-lighter;
+    @media screen and (prefers-color-scheme: dark) {
+        border-color: $dark-primary-color-accent;
+        background-color: $dark-primary-color-background-lighter;
+    }
 }
 
 @mixin secondary-box  {
     @include box-radius;
     background-color: $secondary-color-background;
+    @media screen and (prefers-color-scheme: dark) {
+        background-color: $dark-secondary-color-background;
+    }
 }
 
 @mixin secondary-box-border  {
@@ -31,6 +38,10 @@
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     padding-top: 20px;
+    @media screen and (prefers-color-scheme: dark) {
+        background-color: $dark-secondary-color-background-lighter;
+        border-color: $dark-primary-color-accent;
+    }
 }
 
 @mixin card-padding {
@@ -64,6 +75,9 @@
     font-family: Pacifico, cursive;
     text-align: center;
     color: $secondary-color;
+    @media screen and (prefers-color-scheme: dark) {
+        color: white;
+    }
 }
 
 a.anchor {
@@ -80,6 +94,9 @@ a.anchor {
     max-height: 70px;
     transition: all .2s ease-in-out;
     opacity: 0.8;
+    @media screen and (prefers-color-scheme: dark) {
+        opacity: 1;
+    }
 }
 
 .company-logo:hover {
@@ -90,6 +107,9 @@ a {
     color: $primary-color-accent;
     text-decoration: none;
     transition: all .2s ease-in-out;
+    @media screen and (prefers-color-scheme: dark) {
+        color: $dark-primary-color-accent;
+    }
 }
 
 a:hover {
@@ -99,6 +119,9 @@ a:hover {
 
 .secondary-light-wave {
     fill: $secondary-color-lighter;
+    @media screen and (prefers-color-scheme: dark) {
+        fill: $dark-primary-color-background;
+    }
 }
 
 @mixin svg-wave {
@@ -128,6 +151,15 @@ a:hover {
 
 .space-under {
     margin-bottom: 40px;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    p {
+        color: white;
+    }
+    .small-text{
+        color: white;
+    }
 }
 
 ::-moz-selection { background: $primary-color-accent; }
