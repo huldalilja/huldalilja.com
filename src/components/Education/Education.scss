@@ -6,12 +6,13 @@ box-sizing: border-box;
 }
 
 .timeline-title {
-  @include primary-box-border;
   @include border-padding;
   @include center-horizontal;
   border-radius: 50%;
   width: 250px;
   height: 170px;
+  background-color: $primary-color;
+  border-color: $primary-color;
   @media screen and (prefers-color-scheme: dark) {
     background-color: $dark-primary-color-background;
     border-color: $dark-primary-color-background;
