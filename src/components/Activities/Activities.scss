@@ -13,6 +13,7 @@ $carousel-padding: 28px;
     background-color: $primary-color-background;
     width: 45%;
     position: relative;
+    display: block;
     margin: auto; 
     @media screen and (prefers-color-scheme: dark) {
         color: $dark-primary-color-accent;
