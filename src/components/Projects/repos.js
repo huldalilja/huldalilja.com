@@ -35,7 +35,7 @@ const projects = [
         companyLink:"https://regift.huldalilja.com",
         period:"Made in the spring 2020" ,
         description:"Reusable gift wrapping design and tutorials.",
-        back:(<p>React website made around an idea and design for reusable gift wrapping along tutorials with beautiful photos. The source code can be seen <a target="_blank" rel="noopener noreferrer" href="https://github.com/huldalilja/regift">here</a>.</p>)
+        back:(<p>Website made in React around an idea and design for reusable gift wrapping along tutorials with beautiful photos. The source code can be seen <a target="_blank" rel="noopener noreferrer" href="https://github.com/huldalilja/regift">here</a>.</p>)
     }
 ]
 
