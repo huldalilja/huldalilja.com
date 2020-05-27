@@ -12,6 +12,21 @@
 .experiences {
   @include max-section-width;
 }
+
+.skills {
+  background-color: $secondary-color-background-lighter;
+  padding: 30px;
+  margin-top: 20px;
+  text-align: center;
+  @include box-radius;
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: $dark-primary-color-background-lighter;
+  }
+}
+
+#ExperienceDiv {
+  padding-bottom: 30px;
+}
   
 /* Remove extra left and right margins, due to padding in cards */
 .row {margin: 0 -5px;
