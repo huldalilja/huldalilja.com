@@ -4,6 +4,7 @@ import profile from "../../assets/profile.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from '../Button/Button';
 import cv from '../../assets/Hulda_Lilja_Hannesdóttir_CV.pdf';
+import cvISL from '../../assets/Hulda_Lilja_Hannesdóttir_Ferilskrá.pdf';
 
 class Hello extends Component {
     constructor(props) {
@@ -24,6 +25,16 @@ class Hello extends Component {
         }, 100);
     }
 
+    downloadISL() {
+        // fake server request, getting the file url as response
+        setTimeout(() => {
+            const response = {
+            file:  cvISL
+            };
+            window.open(response.file);
+        }, 100);
+    }
+
     render() {
         return (
             <div className="page" id="HelloDiv">
@@ -34,7 +45,9 @@ class Hello extends Component {
                     <p>My name is Hulda Lilja Hannesdóttir and I am a Computer Scientist and a Software Engineering student. <br/>
                         I also work as a research assistant at Reykjavík University.</p>
                 </div>
-                <Button onClick={this.download}  text="Download CV" icon="download" className="download-button"></Button>
+                <Button onClick={this.download}  text="Download CV - EN" icon="download" className="download-button"></Button>
+                <br/>
+                <Button onClick={this.downloadISL}  text="Sækja Ferilskrá - ISL" icon="download" className="download-button"></Button>
             </div> 
         );
     }

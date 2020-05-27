@@ -23,7 +23,7 @@ class Projects extends PureComponent {
                     <div className="page">
                         <div className="projects">
                             <div className="title space-under">Projects <FontAwesomeIcon icon="hammer"/></div>
-                            <div className="row">
+                            <div className="row flex-container">
                                 {this.repos.map((item, idx) => {
                                     return (
                                         <Card key={idx}

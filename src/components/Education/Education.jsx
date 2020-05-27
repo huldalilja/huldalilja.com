@@ -1,7 +1,7 @@
 import React, { Component} from 'react'
 import "./Education.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import TimelineCard from "../TimelineCard/TimelineCard"
+import TimelineCard from "./TimelineCard/TimelineCard"
 import schools from "./Schools"
 
 class Education extends Component {

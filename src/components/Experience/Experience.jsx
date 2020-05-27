@@ -24,7 +24,7 @@ class Experience extends PureComponent {
                     <div className="page">
                         <div className="experiences">
                             <div className="title space-under">Experience <FontAwesomeIcon icon="briefcase" className="wave"/></div>
-                            <div className="row">
+                            <div className="row flex-container">
                                 {this.works.map((item, idx) => {
                                     return (
                                         <Card key={idx}

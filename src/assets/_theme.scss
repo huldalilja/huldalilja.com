@@ -80,6 +80,12 @@
     }
 }
 
+.flex-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
 a.anchor {
     display: block;
     position: relative;
