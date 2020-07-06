@@ -6,5 +6,7 @@ My personal website made in React and with Sass.
 
 Big thanks to https://getwaves.io/  &  https://www.w3schools.com/  !
 
+[Can be viewed here](https://www.huldalilja.com)
+
 <img src="/screenshot.png" alt="Full screenshot of huldalilja.com" width="150px"/>
 <img src="/screenshot-dark.png" alt="Full screenshot of huldalilja.com dark mode" width="150px"/>
