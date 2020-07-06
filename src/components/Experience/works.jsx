@@ -1,8 +1,9 @@
-import HRlogo from "../../assets/hr.svg";
-import Mimirlogo from "../../assets/mimir.svg";
-import NPAlogo from "../../assets/npa.svg";
-import Brokeylogo from "../../assets/brokey.svg";
-import Reglalogo from "../../assets/regla.svg";
+import HRlogo from "../../assets/media/hr.svg";
+import Mimirlogo from "../../assets/media/mimir.svg";
+import NPAlogo from "../../assets/media/npa.svg";
+import Brokeylogo from "../../assets/media/brokey.svg";
+import Reglalogo from "../../assets/media/regla.svg";
+import HRDatawelllogo from "../../assets/media/hrdatawell.svg";
 import React from 'react'
 
 const works = [
@@ -15,7 +16,7 @@ const works = [
         back:(<p>Designed and developed the company’s first cross-platform mobile app(Xamarin Forms), available on android and iOS. Made a responsive website(ASP.NET) with some of the company’s features as well as new ones that required adopting all layers.</p>)
     },
     {
-        logo:HRlogo, 
+        logo:HRDatawelllogo, 
         companyName:"Reykjavík University - Datawell", 
         companyLink:"http://datawell.ru.is",
         period:"August 2018 - Spring 2020" ,

@@ -1,13 +1,13 @@
-import HRlogo from "../../assets/hr.svg";
-import AUlogo from "../../assets/AU.svg";
-import Verzlologo from "../../assets/verzlo.svg";
+import HRlogo from "../../assets/media/hr.svg";
+import AUlogo from "../../assets/media/AU.svg";
+import Verzlologo from "../../assets/media/verzlo.svg";
 
 const schools = [
     {
         logoLink: "https://en.ru.is/st/dcs/graduate-study/msc-software-engineering/",
         logo:HRlogo,
         title:"Reykjavík University",
-        period : "2018-2020: Part-time MSc in Software Engineering. Not finished." ,
+        period : "2018-: Part-time MSc in Software Engineering." ,
         extraInfo: "Part-time studies while working as a research assistant.",
     },
     {

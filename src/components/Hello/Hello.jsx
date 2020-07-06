@@ -47,7 +47,7 @@ class Hello extends Component {
                 </div>
                 <Button onClick={this.download}  text="Download CV - EN" icon="download" className="download-button"></Button>
                 <br/>
-                <Button onClick={this.downloadISL}  text="Sækja Ferilskrá - ISL" icon="download" className="download-button"></Button>
+                <Button onClick={this.downloadISL}  text="Sækja ferilskrá - ISL" icon="download" className="download-button"></Button>
             </div> 
         );
     }

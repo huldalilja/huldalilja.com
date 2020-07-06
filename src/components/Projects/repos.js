@@ -1,7 +1,7 @@
-import LostInCodelogo from "../../assets/lostincode.svg";
-import SheepOfIcelandlogo from "../../assets/sheepoficeland.png"
-import RegiftLogo from "../../assets/regift.png"
-import HLHlogo from "../../assets/HLH.svg"
+import LostInCodelogo from "../../assets/media/lostincode.svg";
+import SheepOfIcelandlogo from "../../assets/media/sheepoficeland.png"
+import RegiftLogo from "../../assets/media/regift.png"
+import HLHlogo from "../../assets/media/HLH.svg"
 import React from 'react'
 
 const projects = [
