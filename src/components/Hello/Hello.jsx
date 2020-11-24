@@ -42,8 +42,8 @@ class Hello extends Component {
                 <div className="testimonial">
                     <div className="title">Hello <FontAwesomeIcon icon="hand-spock" className="wave"/></div>
                     <img className="profile" src={profile} alt="Avatar"/>
-                    <p>My name is Hulda Lilja Hannesdóttir and I am a Computer Scientist and a Software Engineering student. <br/>
-                        I also work as a research assistant at Reykjavík University.</p>
+                    <p>My name is Hulda Lilja Hannesdóttir and I am a Computer Scientist with BSc in Software Engineering, 
+                        currently doing my MSc in Computer Science.</p>
                 </div>
                 <Button onClick={this.download}  text="Download CV - EN" icon="download" className="download-button"></Button>
                 <br/>
