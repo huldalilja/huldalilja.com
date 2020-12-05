@@ -18,7 +18,7 @@ const works = [
     {
         logo:HRDatawelllogo, 
         companyName:"Reykjavík University - Datawell", 
-        companyLink:"http://datawell.ru.is",
+        companyLink:"https://datawell.is",
         period:"August 2018 - Spring 2020" ,
         description:"Research assistant, working as a full-stack developer",
         back:(<p>Designing and developing a sport and health data platform in Django and React for the Sports Science Department. Automatically gathering consecutive and single measurements and visualizing the data.</p>)
