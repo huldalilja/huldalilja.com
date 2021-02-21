@@ -29,7 +29,7 @@ const works = [
         companyLink:"https://www.mimir.is/is/moya/page/staerdfraedi-menntastodir",
         period:"Winter 2019-2020" ,
         description:"Math teacher at a high school level",
-        back:(<p>Teaching, organizing and grading two math courses at a high school level for individuals returning to school along with my dad. Part-time remotely due to circumstances. Inspired me to write a post about <a target="_blank" rel="noopener noreferrer" href="https://lostincode.blog/2020/03/11/studying-math-focus/">studying math</a>.</p>)
+        back:(<p>Taught, organized and graded two math courses at a high school level for individuals returning to school along with my dad. Part-time remotely due to circumstances. Inspired me to write a post about <a target="_blank" rel="noopener noreferrer" href="https://lostincode.blog/2020/03/11/studying-math-focus/">studying math</a>.</p>)
     },
     {
         logo:HRlogo, 

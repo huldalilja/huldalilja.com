@@ -9,14 +9,7 @@ const schools = [
         logo:ETHlogo,
         title:"Eidgenössische Technische Hochschule Zürich",
         period : "2020-: MSc in Computer Science" ,
-        extraInfo: "MSc at ETH Zürich.",
-    },
-    {
-        logoLink: "https://en.ru.is/st/dcs/graduate-study/msc-software-engineering/",
-        logo:HRlogo,
-        title:"Reykjavík University",
-        period : "2018-: Part-time MSc in Software Engineering. Not finished." ,
-        extraInfo: "Part-time studies while working as a research assistant.",
+        extraInfo: "Major in Data Management Systems.",
     },
     {
         logoLink:"https://en.ru.is/st/dcs/undergraduate-study/bsc-software-engineering/",

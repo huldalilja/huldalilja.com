@@ -11,7 +11,7 @@ const slides = [
         img: systur
     },
     {
-        text: "Been chosen female sailor of the year in Iceland nine times in the last 10 years.",
+        text: "Been chosen female sailor of the year in Iceland nine times.",
         img: isiimg
     },
     {
