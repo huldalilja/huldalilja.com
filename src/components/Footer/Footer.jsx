@@ -24,7 +24,7 @@ class Footer extends PureComponent {
                     <a href="https://www.instagram.com/huldalilja" target="_blank" rel="noopener noreferrer" className="social-icon instagram">
                         <FontAwesomeIcon icon={['fab', 'instagram']}/>
                     </a>
-                    <a href="https://github.com/huldalilja/huldalilja.com" target="_blank" rel="noopener noreferrer" className="social-icon github">
+                    <a href="https://github.com/huldalilja/" target="_blank" rel="noopener noreferrer" className="social-icon github">
                         <FontAwesomeIcon icon={['fab', 'github']}/>
                     </a>
                     <a href = "mailto:hulda@huldalilja.com?subject=What's up?&body=Hello!" target="_blank" rel="noopener noreferrer" className="social-icon envelope">
