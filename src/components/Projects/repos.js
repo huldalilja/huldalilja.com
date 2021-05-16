@@ -2,20 +2,29 @@ import LostInCodelogo from "../../assets/media/lostincode.svg";
 import SheepOfIcelandlogo from "../../assets/media/sheepoficeland.png"
 import RegiftLogo from "../../assets/media/regift.png"
 import HLHlogo from "../../assets/media/HLH.svg"
+import HLHlogoOrange from "../../assets/media/HLHorange.svg"
 import React from 'react'
 
 const projects = [
+    {
+        logo:HLHlogoOrange, 
+        companyName:"huldalilja.com" ,
+        companyLink:"https://huldalilja.com/",
+        period:"Made in the spring 2020" ,
+        description:"My website",
+        back:(<p>Too pretty to not mention, even though it seems like you have already visited it! You can see the source code(React) <a target="_blank" rel="noopener noreferrer" href="https://github.com/huldalilja/huldalilja.com">here</a>.</p>)
+    },
     {
         logo:RegiftLogo ,
         companyName:"Regift" ,
         companyLink:"https://regift.huldalilja.com",
         period:"Made in the spring 2020" ,
         description:"Reusable gift wrapping design and tutorials.",
-        back:(<p>Website made in React around an idea and design for reusable gift wrapping along tutorials with beautiful photos. The source code can be seen <a target="_blank" rel="noopener noreferrer" href="https://github.com/huldalilja/regift">here</a>.</p>)
+        back:(<p>Website made in React around a design for reusable gift wrapping along tutorials with original photos. The source code can be seen <a target="_blank" rel="noopener noreferrer" href="https://github.com/huldalilja/regift">here</a>.</p>)
     },
     {
         logo:HLHlogo, 
-        companyName:"huldalilja.com" ,
+        companyName:"old.huldalilja.com" ,
         companyLink:"https://old.huldalilja.com/",
         period:"Made in 2018" ,
         description:"My old website",

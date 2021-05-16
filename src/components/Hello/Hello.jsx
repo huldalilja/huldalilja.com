@@ -43,7 +43,8 @@ class Hello extends Component {
                     <div className="title">Hello <FontAwesomeIcon icon="hand-spock" className="wave"/></div>
                     <img className="profile" src={profile} alt="Avatar"/>
                     <p>My name is Hulda Lilja Hannesdóttir and I am a Computer Scientist with BSc in Software Engineering, 
-                        currently doing my MSc in Computer Science.</p>
+                        currently doing my MSc in Computer Science.
+                    <br/> Pronouns: she/her</p>
                 </div>
                 <Button onClick={this.download}  text="Download CV - EN" icon="download" className="download-button"></Button>
                 <br/>
