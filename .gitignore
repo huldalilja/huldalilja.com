@@ -18,8 +18,10 @@
 .env.test.local
 .env.production.local
 
-# builded css files from scss
+# built css files from scss
+src/components/**/*.css.map
 src/components/**/*.css
+src/App.css.map
 src/App.css
 
 npm-debug.log*
