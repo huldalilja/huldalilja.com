@@ -41,9 +41,9 @@ class Experience extends PureComponent {
                             </div>
                             <div className="skills">
                                 <div className="title space-under">Skills</div>
-                                <p><b>Languages:</b> Python, C#, JavaScript, HTML, CSS/Sass, Java, C++/C, SQL</p>
+                                <p><b>Programming Languages:</b> Python, C#, JavaScript, Java, C++/C, SQL</p>
                                 <p><b>Frameworks:</b> React, Django, Xamarin Forms, ASP.NET, Unity, Angular</p>
-                                <p><b>Technologies:</b> Docker, Docker Compose, git, CI/CD, cross-platform development, android and iOS distribution<br/></p>
+                                <p><b>Technologies:</b> Docker, git, CI/CD, cross-platform development, android and iOS distribution<br/></p>
                             </div>
                         </div>
                     </div>

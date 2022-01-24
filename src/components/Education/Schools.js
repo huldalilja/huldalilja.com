@@ -9,7 +9,7 @@ const schools = [
         logo:ETHlogo,
         title:"Eidgenössische Technische Hochschule Zürich",
         period : "2020-: MSc in Computer Science" ,
-        extraInfo: "Major in Data Management Systems.",
+        extraInfo: "Major in Data Management Systems and minor in Theoretical Computer Science.",
     },
     {
         logoLink:"https://en.ru.is/st/dcs/undergraduate-study/bsc-software-engineering/",
@@ -30,7 +30,7 @@ const schools = [
         logoLink:"https://www.verslo.is/english/about-us/",
         logo:Verzlologo,
         title:"Commercial College of Iceland",
-        period : "2010-2014: Matriculation exam with focus on math and science." ,
+        period : "2010-2014: Matriculation exam." ,
         extraInfo: "Focus on math and science."
     }
 ]

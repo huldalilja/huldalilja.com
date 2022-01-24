@@ -25,10 +25,10 @@ const slides = [
         url: "https://brokey.is/styrkur-vegna-landslidsverkefna/"
     },
     {
-        text: "My brother and I in a movie called",
+        text: "My brother and I in a documentary called",
         img: ahugamalislendinga,
         link: " Icelandic Hobbies.",
-        url: "https://www.youtube.com/watch?v=MQE-UYHYUYc"
+        url: "https://www.imdb.com/title/tt3463080/"
     },
     {
         text: "Final examination on classical trumpet in 2014. Participated in various projects, including playing with The Iceland Symphony Youth Orchestra.",
