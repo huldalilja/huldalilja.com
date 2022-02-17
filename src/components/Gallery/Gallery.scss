@@ -9,6 +9,7 @@ $carousel-padding: 28px;
 .carousel-container {
     @include border-style;
     padding: 15px $carousel-padding;
+    padding-bottom: 20px;
     color: $primary-color-accent;
     background-color: $primary-color-background;
     width: 45%;
@@ -29,6 +30,7 @@ $carousel-padding: 28px;
     max-width: 100%;
     border-radius: 5px;
     user-select: none;
+    margin-bottom: 10px;
 }
 
 /* Next & previous buttons */
@@ -122,9 +124,9 @@ $carousel-padding: 28px;
     padding: 15px;
     opacity: 0.9;
     background-color: $secondary-color;
-    width: 90%;
-    margin-top: -70px !important;
-    height: 120px;
+    width: 100%;
+    //margin-top: -70px !important;
+    height: 130px;
     margin: auto;
     text-align: center;
     border-radius: 5px;

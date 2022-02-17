@@ -18,7 +18,7 @@
   },
   "scripts": {
     "build-css": "sass --load-path=./src --load-path=./node_modules src/",
-    "watch-css": "npm run build-css && sass --load-path=./src  --load-path=./node_modules src/ --watch --recursive",
+    "watch-css": "npm run build-css",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "start-js": "react-scripts start",

@@ -12,16 +12,17 @@ $nav-bar-size: -57px;
     width: 100%;
     transition: top 0.3s;
     z-index: 2;
+    border-radius: 0px 0px 10px 10px;
 }
 
 #navbar > ul {
-    margin: 0px;
+    margin: -1px;
     padding: 0px;
 }
 
 @mixin nav-link {
     padding: 12px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 17px;
 }
@@ -37,12 +38,14 @@ $nav-bar-size: -57px;
     background-color: $primary-color;
     font-weight: bold;
     transition: background-color .5s ease-in-out, font-weight 0.5s ease-in-out;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .active-link {
     background-color: $primary-color;
     font-weight: bold;
     transition: background-color .5s ease-in-out, font-weight 0.5s ease-in-out;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .hidden-navbar {
