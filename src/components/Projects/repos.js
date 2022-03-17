@@ -42,8 +42,8 @@ const projects = [
         logo:LostInCodelogo,
         companyName:"LostInCode.blog" ,
         companyLink:"https://lostincode.blog",
-        period:"Started summer 2017" ,
-        description:"Computer Science's related blog I write with two of my friends",
+        period:"Summer 2017 - 2019" ,
+        description:"Computer Science's related blog I wrote with two of my friends",
         back:(<p>Three computer scientists graduates from Reykjavík University in Iceland writing a blog about subjects and topics that they find interesting in the field of Computer Science and related areas. <a target="_blank" rel="noopener noreferrer" href="https://lostincode.blog">Read on</a>.</p>)
     }
 ]
