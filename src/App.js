@@ -16,7 +16,7 @@ import Statcounter from "./components/Statcounter/Statcounter"
 library.add(faEnvelope, faAnchor, faArrowCircleUp, faChevronCircleDown, faChevronCircleUp, faTimes, faBars, faHammer, faDownload, fab, faHandSpock, faHandPaper, faAward, faFolder, faBriefcase, faBook);
 
 function App() {
-  console.log("Hi there! You can also just have a look at the source code on GitHub: github.com/huldalilja/huldalilja.com or send me a line to hulda@huldalilja.com!")
+  console.log("Hi there! You can also just have a look at the source code on GitHub: github.com/huldalilja/huldalilja.com or send me a line to huldalilja@huldalilja.com!")
   return (
     <Fragment>
       <Navbar/>
