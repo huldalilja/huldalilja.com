@@ -15,7 +15,7 @@ $nav-bar-size: -57px;
     border-radius: 0px 0px 10px 10px;
 }
 
-#navbar > ul {
+#navbar>ul {
     margin: -1px;
     padding: 0px;
 }
@@ -24,13 +24,16 @@ $nav-bar-size: -57px;
     padding: 12px;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 17px;
+    font-size: 23px;
+    font-family: Pacifico, cursive;
 }
 
 .nav-item {
     @include nav-link;
-    width: 20%; /* Five equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-    text-align: center; /* If you want the text to be centered */
+    width: 20%;
+    /* Five equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center;
+    /* If you want the text to be centered */
     float: left;
 }
 
@@ -61,10 +64,14 @@ $nav-bar-size: -57px;
 }
 
 .go-to-top-icon {
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
     color: $primary-color-accent;
     font-size: xx-large;
     transition: all 0.2s ease;
@@ -72,7 +79,8 @@ $nav-bar-size: -57px;
     cursor: pointer;
 }
 
-.go-to-top-icon:hover, .go-to-top-icon:active{
+.go-to-top-icon:hover,
+.go-to-top-icon:active {
     transform: scale(1.1);
 }
 
@@ -82,13 +90,23 @@ $nav-bar-size: -57px;
 }
 
 @keyframes turn-right {
-    from {transform: rotate(0deg)}
-    to {transform: rotate(90deg)}
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(90deg)
+    }
 }
 
 @keyframes turn-left {
-    from {transform: rotate(0deg)}
-    to {transform: rotate(-90deg)}
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(-90deg)
+    }
 }
 
 .hamburger {
@@ -122,7 +140,12 @@ $nav-bar-size: -57px;
     }
 
     @keyframes show-nav {
-        from {transform: scale(1, 0)}
-        to {transform: scale(1, 1)}
+        from {
+            transform: scale(1, 0)
+        }
+
+        to {
+            transform: scale(1, 1)
+        }
     }
 }
